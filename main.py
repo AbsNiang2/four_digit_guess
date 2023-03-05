@@ -5,7 +5,6 @@ def generate_rolls():
     rolls = []
     for i in range(0, 4):  # 4 digits to guess
         rolls.append(random.randint(1, 6))
-    print(rolls)
     return rolls
 
 
@@ -22,7 +21,7 @@ def compare_guess(guess, roll_to_guess):  # returns if all 4 digits are found or
     return counter == 4
 
 
-guesses = 12
+guesses = 4
 random_rolls = generate_rolls()
 print("Roll generated: ")
 while guesses > 0:
